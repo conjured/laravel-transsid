@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "iMi\\LaravelTransSid\\": "src/"
+            "Conjured\\LaravelTransSid\\": "src/"
         }
     },
     "require": {}
