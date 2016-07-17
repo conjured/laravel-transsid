@@ -1,6 +1,6 @@
 <?php
 
-namespace iMi\LaravelTransSid;
+namespace Conjured\LaravelTransSid;
 
 use Illuminate\Support\ServiceProvider;
 
