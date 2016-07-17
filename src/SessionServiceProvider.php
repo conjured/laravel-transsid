@@ -1,6 +1,6 @@
 <?php
 
-namespace iMi\LaravelTransSid;
+namespace Conjured\LaravelTransSid;
 
 class SessionServiceProvider extends \Illuminate\Session\SessionServiceProvider
 {
