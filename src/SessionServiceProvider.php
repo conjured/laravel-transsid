@@ -10,6 +10,6 @@ class SessionServiceProvider extends \Illuminate\Session\SessionServiceProvider
 
         $this->registerSessionDriver();
 
-        $this->app->singleton('Illuminate\Session\Middleware\StartSession', 'iMi\LaravelTransSid\StartSessionMiddleware');
+        $this->app->singleton('Illuminate\Session\Middleware\StartSession', 'Conjured\LaravelTransSid\StartSessionMiddleware');
     }
 }
