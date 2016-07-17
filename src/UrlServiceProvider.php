@@ -13,7 +13,7 @@ class UrlServiceProvider extends ServiceProvider
 
     public function registerUrlGenerator()
     {
-        $this->app->bind('Illuminate\Routing\UrlGenerator', 'iMi\LaravelTransSid\UrlGeneratorService');
+        $this->app->bind('Illuminate\Routing\UrlGenerator', 'Conjured\LaravelTransSid\UrlGeneratorService');
 
         $this->app->singleton('url', function ($app) {
             $routes = $app['router']->getRoutes();
