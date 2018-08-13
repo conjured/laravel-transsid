@@ -8,11 +8,11 @@ use Illuminate\Routing\UrlGenerator;
 class UrlGeneratorService extends UrlGenerator
 {
     public function addSid($url) {
-        if (strpos($url, \Config::get('session.cookie')) !== false) {
+        if (strpos($url, config('session.cookie')) !== false) {
             return $url;
         }
         $sep = (strpos($url, '?') !== false) ? '&' : '?';
-        $url .= $sep . \Config::get('session.cookie') . '=' . \Session::getId();
+        $url .= $sep . config('session.cookie') . '=' . \Session::getId();
         return $url;
 
     }
