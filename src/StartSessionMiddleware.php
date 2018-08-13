@@ -16,7 +16,7 @@ class StartSessionMiddleware extends \Illuminate\Session\Middleware\StartSession
      */
     protected function lockToUser($session, $request)
     {
-        $session->set(self::LOCKED_FIELD, [
+        $session->put(self::LOCKED_FIELD, [
             'ip' => $request->getClientIp(),
             'agent' => md5($request->server('HTTP_USER_AGENT'))
         ]);
