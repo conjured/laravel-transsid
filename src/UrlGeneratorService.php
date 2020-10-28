@@ -28,7 +28,7 @@ class UrlGeneratorService extends UrlGenerator
         return $url;
     }
 
-    protected function toRoute($route, $parameters, $absolute)
+    public function toRoute($route, $parameters, $absolute)
     {
         if (isset($parameters['NO_ADD_SID'])) {
             unset($parameters['NO_ADD_SID']);
